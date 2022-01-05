@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <title> </title>
+    <meta charset="utf-8">
+    <style>
+        .caixa {
+
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 25px;
+            width: 700px;
+        
+            background-color: rgba(204, 204, 204, 0.336);
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.336);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        button {
+
+
+            display: block;
+            cursor: pointer;
+            padding: 5px;
+            margin: 10px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.685);
+            font-size: 0.8em;
+        }
+
+        button:hover {
+
+            background-color: rgba(0, 0, 0, 0.329);
+
+
+        }
+
+        input {
+
+            width: 100%;
+            outline: none;
+            padding-top: 10px;
+            border: transparent;
+        }
+
+        .personalizar {
+
+            margin-top: 20%;
+        }
+
+        .fonts, .cor, .outras{
+
+            float: left;
+            margin:15px;
+            background-color: rgba(0, 0, 0, 0.397);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        
+    </style>
+
+</head>
+
+<body>
+
+    <script src="inde.js">
+
+    </script>
+
+
+    <div class="caixa">
+
+        <div class="conteudo1">
+
+            <h2></h2>
+            <br>
+            <input type="text" placeholder="DIGITE AQUI...." oninput="mudar(this)">
+
+        </div>
+
+        <div class="personalizar">
+
+
+            <p>VOCÊ PODE PERSONALIZAR O TEXTO QUE VOCÊ DIGITOU NO CAMPO ACIMA</p>
+            <br>
+
+            <div class="fonts">
+
+                <P>ALTERAR FONT</P>
+                <br>
+                <button onclick="TF1()">TAMANHO 1</button>
+                <button onclick="TF2()">TAMANHO 2</button>
+                <button onclick="TF3()">TAMANHO 3</button>
+
+            </div>
+
+            <div class="cor">
+
+                <p>ALTERAR CORES</p>
+                <br>
+                <button onclick="CT1()">COR 1</button>
+                <button onclick="CT2()">COR 2</button>
+                <button onclick="CT3()">COR 3</button>
+               
+
+            </div>
+
+            <div class = "outras">
+
+                <p>OUTRAS FORMATAÇOES</p>
+
+                <button onclick="Maisculo()">TEXTO EM MAISCULO</button>
+                <button onclick="Minusculo()">TEXTO EM MINUSCULO</button>
+                <button onclick="ocultar()">OCULTAR TEXTO</button>
+                <button onclick="aparecer()">APARECER TEXTO</button>
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+</body>
+
+
+
+</html>
